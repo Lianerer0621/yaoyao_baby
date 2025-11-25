@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>瑶瑶宝的药品清单</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400 ;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css ">
     <style>
         :root {
             /* 库洛米主题配色 */
@@ -54,14 +54,23 @@
         }
 
         /* 背景图片占位区域 - 用户可以在这里放置自己的库洛米背景图 */
-         .background-image-placeholder {
-              position: fixed;
-              inset: 0;
-              z-index: -1;
-              background:
-                    radial-gradient(circle at 20% 30%, rgba(233, 30, 99, 0.3) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 70%, rgba(74, 20, 140, 0.3) 0%, transparent 50%);
-              opacity: 0.4;
+        .background-image-placeholder {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(233, 30, 99, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(74, 20, 140, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(106, 27, 154, 0.2) 0%, transparent 50%);
+            /* 用户可以将背景图片URL放在这里 */
+            background-image: url('./background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.4;
         }
 
         /* 装饰性库洛米图案层 */
@@ -73,9 +82,9 @@
             height: 100%;
             z-index: -1;
             background-image: 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(233,30,99,0.1)">🖤</text></svg>'),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(74,20,140,0.1)">💜</text></svg>'),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(106,27,154,0.1)">🦴</text></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(233,30,99,0.1)">🖤</text></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(74,20,140,0.1)">💜</text></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(106,27,154,0.1)">🦴</text></svg>');
             background-size: 200px 200px, 300px 300px, 250px 250px;
             background-position: 0 0, 50px 50px, 100px 100px;
             background-repeat: repeat;
@@ -603,7 +612,6 @@
     </style>
 </head>
 <body>
-    <img id="bg" src="./background2.jpg" alt="">
     <!-- 精美背景图层 -->
     <div class="background-layer"></div>
     
@@ -620,7 +628,7 @@
             <div class="kuromi-character-decoration right">💜</div>
             <div class="header-content">
                 <span class="kuromi-icon">💜</span>
-                <h1>瑶瑶宝贝专用的药品清单</h1>
+                <h1>瑶瑶宝贝的药品清单</h1>
                 <span class="kuromi-icon">🖤</span>
                 <p class="subtitle">老公给瑶瑶的贴心小药箱💝</p>
             </div>
@@ -628,7 +636,7 @@
 
         <!-- Love Note -->
         <div class="love-note">
-            <p>我最爱的瑶瑶宝，这些都是老公为你精心准备的常用药品，希望你在需要的时候能够及时找到合适的药物。每一种药都有详细的说明和注意事项，一定要仔细阅读哦～</p>
+            <p>我最爱的脑婆，这些都是脑公为你精心准备的常用药品，希望你在需要的时候能够及时找到合适的药物。每一种药都有详细的说明和注意事项，一定要仔细阅读哦～</p>
         </div>
 
         <!-- Medicine Grid -->
